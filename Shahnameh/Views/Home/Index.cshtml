@@ -1,0 +1,31 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>شاهنامه بخوانیم</title>
+    <link href="./Static/styles/_dist/main.css?v5" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>شاهنامه بخوانیم</h1>
+            <search v-model="search"></search>
+        </header>
+            
+        <aside v-if="showCategories">
+            <categories v-model="category"></categories>
+        </aside>
+        
+        <main>
+            <transition name="page">
+                <router-view></router-view>
+            </transition>
+        </main>
+    </div>
+
+	<script src="./Static/scripts/_dist/main.js?v5"></script>
+</body>
+</html>
