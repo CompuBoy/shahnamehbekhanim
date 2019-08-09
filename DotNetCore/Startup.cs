@@ -13,6 +13,7 @@ using Microsoft.EntityFrameworkCore;
 using Shahnameh.Models;
 using System.IO;
 using Microsoft.Extensions.FileProviders;
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 
 namespace ShahnamehBekhanim
 {
@@ -37,7 +38,13 @@ namespace ShahnamehBekhanim
 
 
             services.AddDbContext<DataModel>(options => {
-                options.UseSqlServer(this.Configuration.GetConnectionString("Database"));
+                if (this.Configuration.GetValue<bool>("UseMySql")) {
+                    options.UseMySql(this.Configuration.GetConnectionString("Database"), mySqlOptions => {
+                        mySqlOptions.ServerVersion(new Version(5, 7, 17), ServerType.MySql);
+                    });
+                } else {
+                    options.UseSqlServer(this.Configuration.GetConnectionString("Database"));
+                }
             });
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
