@@ -5,6 +5,12 @@
 		},
 		{
 			"path": "Shahnameh.Models"
+		},
+		{
+			"path": "Shahnameh.Import"
+		},
+		{
+			"path": "ImportTool"
 		}
 	]
 }

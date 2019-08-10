@@ -33,9 +33,9 @@ namespace Shahnameh.Models
             base.OnModelCreating(modelBuilder);
             
             modelBuilder.Entity<Person>()
-                .HasKey(p => new { p.PostID, p.VerseIndex, });
+                .HasKey(p => new { p.PostID, p.Name, p.VerseIndex, });
             modelBuilder.Entity<Phrase>()
-                .HasKey(ph => new { ph.PostID, ph.VerseIndex, });
+                .HasKey(ph => new { ph.PostID, ph.Value, ph.VerseIndex, });
             modelBuilder.Entity<Verse>()
                 .HasKey(v => new { v.PostID, v.Index, });
             
