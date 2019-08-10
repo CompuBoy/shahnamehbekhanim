@@ -42,7 +42,10 @@ namespace ShahnamehBekhanim
                     options.UseMySql(this.Configuration.GetConnectionString("Database"), mySqlOptions => {
                         mySqlOptions.ServerVersion(new Version(5, 7, 17), ServerType.MySql);
                     });
-                } else {
+                } else if (this.Configuration.GetValue<bool>("UseSqlite")) {
+                    options.UseSqlite(this.Configuration.GetConnectionString("Database"));
+                }
+                else {
                     options.UseSqlServer(this.Configuration.GetConnectionString("Database"));
                 }
             });

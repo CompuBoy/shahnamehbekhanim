@@ -33,6 +33,8 @@ namespace Shahnameh.Import
         {
             using (var model = new DataModel(options))
             {
+                model.Database.EnsureCreated();
+                
                 var post = model.Posts.Where(p => p.ID == id).FirstOrDefault();
                 if (post == null)
                 {
