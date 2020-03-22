@@ -17,7 +17,7 @@
 
 <script lang="ts">
     import Vue from 'vue';
-    import Api from '../services';
+    import Api, { TNews, TNewsContent } from '../services';
 
     const search = (item, search) => {
         if (!search) {
@@ -25,6 +25,10 @@
         }
 
         if (item.title && item.title.indexOf(search) >= 0) {
+            return true;
+        }
+
+        if (item.subtitle && item.subtitle.indexOf(search) >= 0) {
             return true;
         }
 
@@ -39,27 +43,34 @@
         data() {
             return {
                 loading: true,
-                items: [],
-            }
-        },
-        computed: {
-            itemsView: function () {
-                return this.items
-                    .filter((i: any) => search(i, this.search));
+                info: {} as TNewsContent,
             }
         },
         props: [
-            'id',
-            'title',
-            'content',
-            'date',
-            'references',
-            'search',
+            'id'
         ],
         watch: {
-            content(){ this.update() },
-            title(){ this.update() },
-            references() { this.update() }
-        },               
+            id: function() { this.update() },
+        },
+        methods: {
+            back() {
+                history.back();
+            },
+            update() {
+                Promise.all([
+                    Api.newscontent(this.id),
+                ]).then(([info]) => {
+                    console.log(info);
+
+                    this.loading = false;
+                    this.info = info;
+                });
+            },
+        },
+        created() {
+            this.update();
+        },
+        destroyed() {
+        }
     });
 </script>

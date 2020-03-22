@@ -56,6 +56,7 @@
             'id',
             'title',
             'subtitle',
+            'date',
             'content',
             'search'
         ],
