@@ -39,6 +39,8 @@ export default {
     verses: (id: number) => request<TVerses>('verses/', { postId: id }),
     phrases: (id: number) => request<TPhrases>('phrases/', { postId: id }),
     persons: (id: number) => request<TPersons>('persons/', { postId: id }),
+    news: () => request<TNews>('news'),
+    newscontent: (id: number) => request<TNewsContent>('news/', { newsId: id }),
 }
 
 export type TCategories = string[];
@@ -102,3 +104,20 @@ export type TPhrases = {
 }[];
 
 export type TPersons = string[];
+
+export type TNews = { 
+    id: number,
+    title: string,
+    subtitle: string,
+    content: string,
+    date: string,
+    references: string[],
+}[];
+
+export type TNewsContent = {
+    id: number,
+    title: string,
+    subtitle: string,
+    content: string,
+    date: string,
+}
