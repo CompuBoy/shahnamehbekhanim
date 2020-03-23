@@ -6,11 +6,11 @@
                 v-bind:key="index"
                 v-bind:class="{ current: item === value }"
             >
-				<a v-on:click="$emit('input', item)">{{ item || 'همه' }}</a>
+				<a v-on:click="$emit('input', item)">{{ item || 'خانه' }}</a>
 			</li>
 		</ul>
 	</div>
-</template>
+</template> 
 
 <script lang="ts">
     import Api from '../services';

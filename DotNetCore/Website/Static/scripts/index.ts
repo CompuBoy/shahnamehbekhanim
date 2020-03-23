@@ -6,6 +6,7 @@ import News from './components/news.vue';
 import NewsContent from './components/newscontent.vue';
 import PodcastPosts from './components/podcastposts.vue';
 import PodcastPost from './components/podcastpost.vue';
+import About from './components/about.vue';
 import Search from './components/search.vue';
 import Api from './services';
 import VueRouter from 'vue-router';
@@ -15,11 +16,14 @@ Vue.use(VueRouter);
 const router = new VueRouter({
    //mode: 'history',
    routes: [
-       { name: 'index', path: '/', component: Posts, props: r => ({ 
-               category: r.query.category,
-               narrator: r.query.narrator,
-               search: r.query.search 
-       }) },
+       { name: 'index', path: '/', props: true },
+       { name: 'posts', path: '/posts', component: Posts, props: r => ({ 
+            category: r.query.category,
+            narrator: r.query.narrator,
+            search: r.query.search 
+        })
+       },
+       { name: 'about', path: '/about', component: About },
        { name: 'news', path:'/news', component: News, props: true },
        { name: 'newsContent', path: '/news/:id', component: NewsContent, props: true }, 
        { name: 'post', path: '/post/:id', component: Post, props: true },
@@ -32,12 +36,17 @@ const app = new Vue({
     el: '#app',
     data: {
         category: '',
+        showNews: false,
         search: '',
         showCategories: true,
     },
     methods: {
         updateCategories() {
             this.showCategories = this.$route.name != 'post';
+        },
+        
+        updateNews() {
+            this.showNews = this.$route.name === 'news';
         }
     },
     created: function(){
@@ -60,6 +69,7 @@ const app = new Vue({
     },
     components: {
         'categories': Categories,
+        'about': About,
         'search': Search,
         'posts': Posts,
         'news': News,

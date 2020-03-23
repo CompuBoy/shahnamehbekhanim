@@ -9,17 +9,30 @@
     <link href="./Static/styles/_dist/main.css?v5" rel="stylesheet">
 </head>
 <body>
-    <div id="app">
+    <aside id="app">
         <header>
             <h1>شاهنامه بخوانیم</h1>
             <search v-model="search"></search>
         </header>
-            
+
         <aside v-if="showCategories">
             <categories v-model="category"></categories>
         </aside>
         
         <main>
+            <aside class="postsBar">
+                <posts v-model='posts'></posts>
+            </aside> 
+            <div class="homeContent">
+                <ul>
+                    <li>
+                        <news v-model="news"></news>
+                    </li>
+                    <li>
+                        <about></about>
+                    </li>
+                </ul>  
+            </div>           
             <transition name="page">
                 <router-view></router-view>
             </transition>
