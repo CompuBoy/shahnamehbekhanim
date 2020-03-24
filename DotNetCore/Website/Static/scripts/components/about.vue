@@ -10,9 +10,9 @@
 عشق بسیاری در این کار داشتیم که بی آن، تاب سختی‌ها را نمی‌آوردیم. دلگرمی و همراهی و راهنمایی‌های دکتر خالقی مطلق را داشتیم و پس از آن، لذت توجه و دلگرمی‌های شما را. خوشحالیم که با شما همراهیم و مفتخریم به این. 
 با ما درتماس باشید 
         </p>
-        <a class="email" href="shahnamehpodcast@gmail.com"></a>
-        <a class="telegram" href="https://t.me/ShahnamehBekhanim"></a>
-        <a class="twitter" href="https://twitter.com/Shahnamehpodcst"></a>
+        <a class="email" href="shahnamehpodcast@gmail.com" target="_blank"></a>
+        <a class="telegram" href="https://t.me/ShahnamehBekhanim" target="_blank"></a>
+        <a class="twitter" href="https://twitter.com/Shahnamehpodcst" target="_blank"></a>
 	</div>
 </template>
 
