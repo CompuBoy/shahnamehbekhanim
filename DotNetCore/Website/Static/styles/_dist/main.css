@@ -225,10 +225,8 @@ main {
   color: rgba(0, 0, 0, .9);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  margin-top: 32px;
-  margin-top: 2rem;
-  margin-bottom: 16px;
-  margin-bottom: 1rem; }
+  margin: 32px 32px 0px;
+  margin: 2rem 2rem 0rem; }
   #news h3 {
     display: block;
     margin-bottom: 6.4px;
@@ -401,8 +399,8 @@ main {
   transition: all 3.2px;
   -webkit-transition: all 0.2rem;
   transition: all 0.2rem;
-  margin-bottom: 16px;
-  margin-bottom: 1rem; }
+  margin: 8px 32px 0px;
+  margin: .5rem 2rem 0rem; }
   #about h3 {
     padding: 0px;
     padding: 0rem;
