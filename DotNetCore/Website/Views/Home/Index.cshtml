@@ -20,19 +20,19 @@
         </aside>
         
         <main>
-            <aside class="postsBar">
+            <aside>          
+                <div>
+                    <ul>
+                        <li>
+                            <news v-model="news"></news>
+                        </li>
+                        <li>
+                            <about></about>
+                        </li>
+                    </ul>  
+                </div> 
                 <posts v-model='posts'></posts>
-            </aside> 
-            <div class="homeContent">
-                <ul>
-                    <li>
-                        <news v-model="news"></news>
-                    </li>
-                    <li>
-                        <about></about>
-                    </li>
-                </ul>  
-            </div>           
+            </aside>           
             <transition name="page">
                 <router-view></router-view>
             </transition>

@@ -182,7 +182,7 @@ main {
         padding: 0;
         li {
             margin-bottom: 1rem;
-            width: 100%;
+            width: 32%;
             a {
                 display: block;
                 padding: 0.7rem 1rem;
@@ -215,7 +215,7 @@ main {
             flex-wrap: wrap;
             justify-content: space-between;
             li {
-                width: 100%;
+                width: 32%;
             }
         }
     }
@@ -239,19 +239,16 @@ main {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.9);
     transition: all 0.2s;
-    margin: .5rem;
-    margin-top: 2rem;
-    margin-left: 2.5rem;
+    margin: 2rem 2rem 0rem;
     h3 {
         display: block;
         margin-bottom: .4rem;
     }
     p {
-        font-size: 12pt;
+        font-size: .9rem;
         margin: 0rem;
         padding: 0rem;
         text-align: justify;
-    
         a {
             display: inline-block;
             padding: 0rem;
@@ -264,7 +261,8 @@ main {
         width: 7rem;
         height: 2.5rem;
         padding: 0rem;
-        margin-left: 1.5rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
         opacity: 0.7;
         border-radius: .2rem;
         cursor: pointer;
@@ -277,11 +275,12 @@ main {
         display: inline-block;
         background-size: 7rem;
         width: 7rem;
-        height: 3.5rem;
+        height: 2.5rem;
         padding: 0rem;
-        margin-left: 1.5rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
         opacity: 0.7;
-        border-radius: .3rem;
+        border-radius: .2rem;
         cursor: pointer;
         &:hover {
             opacity: 1;
@@ -294,7 +293,8 @@ main {
         width: 7rem;
         height: 2.5rem;
         padding: 0rem;
-        margin-left: 1.5rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
         opacity: 0.7;
         border-radius: .2rem;
         cursor: pointer;
@@ -309,7 +309,8 @@ main {
         width: 7rem;
         height: 2.5rem;
         padding: 0rem;
-        margin-left: 1.5rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
         opacity: 0.7;
         border-radius: .2rem;
         cursor: pointer;
@@ -324,7 +325,8 @@ main {
         width: 7rem;
         height: 2.5rem;
         padding: 0rem;
-        margin-left: 1.5rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
         opacity: 0.7;
         border-radius: .2rem;
         cursor: pointer;
@@ -384,18 +386,15 @@ main {
     border-radius: 0.4rem;
     text-decoration: none;
     color: rgba(0, 0, 0, 0.9);
-    transition: all 0.2s;
-    margin: 0.5rem;
-    margin-left: 2rem;
-    margin-left: 2.5rem;
-    float: left;
+    transition: all 0.2rem;
+    margin: .5rem 2rem 0rem;
     h3 {
         padding: 0rem;
         padding-bottom: 0.4rem;
         display: block;
     }
     p {
-        font-size: 12pt;
+        font-size: .9rem;
         padding: 0rem;
         text-align: justify;
     }
