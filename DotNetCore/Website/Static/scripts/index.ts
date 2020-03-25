@@ -8,6 +8,7 @@ import PodcastPosts from './components/podcastposts.vue';
 import PodcastPost from './components/podcastpost.vue';
 import About from './components/about.vue';
 import Search from './components/search.vue';
+import Home from './components/home.vue'
 import Api from './services';
 import VueRouter from 'vue-router';
 
@@ -16,7 +17,7 @@ Vue.use(VueRouter);
 const router = new VueRouter({
    //mode: 'history',
    routes: [
-       { name: 'index', path: '/', props: true },
+       { name: 'index', path: '/', component: Home, props: true },
        { name: 'posts', path: '/posts', component: Posts, props: r => ({ 
             category: r.query.category,
             narrator: r.query.narrator,
@@ -36,7 +37,6 @@ const app = new Vue({
     el: '#app',
     data: {
         category: '',
-        showNews: false,
         search: '',
         showCategories: true,
     },
@@ -44,10 +44,6 @@ const app = new Vue({
         updateCategories() {
             this.showCategories = this.$route.name != 'post';
         },
-        
-        updateNews() {
-            this.showNews = this.$route.name === 'news';
-        }
     },
     created: function(){
         this.updateCategories();
@@ -69,6 +65,7 @@ const app = new Vue({
     },
     components: {
         'categories': Categories,
+        'home': Home,
         'about': About,
         'search': Search,
         'posts': Posts,

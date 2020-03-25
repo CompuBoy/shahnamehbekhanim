@@ -126,13 +126,94 @@ main {
         margin: 0;
         display: none;
     }
-    aside.postsBar {
-        float: right;
-        width: 30%
+}
+
+#home {
+    text-align: center;
+    width: 94%;
+    margin: auto;
+    a.postbox {
+        background: resolve('ShahnameBekhanim.png') 50% 50% no-repeat;
+        display: block;
+        background-size: 100%;
+        width: 100%;
+        height: 25rem;
+        padding: 0px;
+        opacity: 1;
+        text-align: center;
+        cursor: pointer;
+        margin: 0rem;
+        img.play {
+            background: resolve('play.svg') 50% 50% no-repeat;
+            background-size: 100px;
+            position: absolute;
+            top: 8rem;
+            left: 46%;
+            width: 100px;
+            height: 100px;
+            border: none !important;
+            border-width: 0px;
+            opacity: 0.4;
+        }
+        &:hover {
+            opacity: 1;
+        }
     }
-    .homeContent {
-        float: left;
-        width: 70%;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li.box {
+            margin-bottom: 1rem;
+            width: 48%;
+            display: inline-block;
+            a {
+                display: block;
+                padding: 0.7rem 1rem;
+                border-radius: 0.4rem;
+                text-decoration: none;
+                color: rgba(0, 0, 0, 0.9);
+                transition: all 0.2s;
+                height: 100px;
+                i {
+                    display: block;
+                    font-style: normal;
+                    opacity: 1;
+                    text-align: right;
+                    font-size: 1.2rem;
+                }
+                img.thumbnail {
+                    width: 100px;
+                    height: 100px;
+                    float: right;
+                    margin-left: 10px;
+                    border: none !important;
+                    border-width: 0px;
+                }
+                img.aboutthumb {
+                    background: resolve('thumbnail.jpg') 50% 50% no-repeat;
+                    background-size: 100px;
+                }
+                img.newsthumb {
+                    background: resolve('thumbnail1.jpg') 50% 50% no-repeat;
+                    background-size: 100px;
+                }
+                small,
+                strong {
+                    text-align: right;
+                    display: block;
+                }
+                strong {
+                    font-size: 2rem;
+                }
+                small {
+                    margin-top: 0.5rem;
+                }
+                &:hover {
+                    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+                }
+            }
+        }
     }
 }
 
@@ -254,85 +335,39 @@ main {
             padding: 0rem;
         }
     }
-    .castbox {
-        background: resolve('castbox.png') 50% 50% no-repeat;
+    .castbox,
+    .podcastaddict,
+    .podcastplayer,
+    .overcast,
+    .applepodcast {
         display: inline-block;
         background-size: 7rem;
         width: 7rem;
         height: 2.8rem;
         padding: 0rem;
         margin-left: 1rem;
-        margin-top: 1rem;
+        margin-top: 2rem;
         opacity: 0.7;
         border-radius: .5rem;
         cursor: pointer;
         &:hover {
             opacity: 1;
         }
+    }
+    .castbox {
+        background: resolve('castbox.png') 50% 50% no-repeat;
     }
     .podcastaddict {
         background: resolve('podcastaddict.png') 50% 50% no-repeat;
-        display: inline-block;
-        background-size: 7rem;
-        width: 7rem;
-        height: 2.8rem;
-        padding: 0rem;
-        margin-left: 1rem;
-        margin-top: 1rem;
-        opacity: 0.7;
-        border-radius: .5rem;
-        cursor: pointer;
-        &:hover {
-            opacity: 1;
-        }
     }
     .overcast {
         background: resolve('overcast.png') 50% 50% no-repeat;
-        display: inline-block;
-        background-size: 7rem;
-        width: 7rem;
-        height: 2.8rem;
-        padding: 0rem;
-        margin-left: 1rem;
-        margin-top: 1rem;
-        opacity: 0.7;
-        border-radius: .5rem;
-        cursor: pointer;
-        &:hover {
-            opacity: 1;
-        }
     }
     .applepodcast {
         background: resolve('applepodcast.png') 50% 50% no-repeat;
-        display: inline-block;
-        background-size: 7rem;
-        width: 7rem;
-        height: 2.8rem;
-        padding: 0rem;
-        margin-left: 1rem;
-        margin-top: 1rem;
-        opacity: 0.7;
-        border-radius: .5rem;
-        cursor: pointer;
-        &:hover {
-            opacity: 1;
-        }
     }
     .podcastplayer {
         background: resolve('castbox.png') 50% 50% no-repeat;
-        display: inline-block;
-        background-size: 7rem;
-        width: 7rem;
-        height: 2.8rem;
-        padding: 0rem;
-        margin-left: 1rem;
-        margin-top: 1rem;
-        opacity: 0.7;
-        border-radius: .5rem;
-        cursor: pointer;
-        &:hover {
-            opacity: 1;
-        }
     }
     ul {
         list-style: none;
@@ -394,7 +429,7 @@ main {
         display: block;
     }
     p {
-        font-size: .9rem;
+        font-size: 1rem;
         padding: 0rem;
         text-align: justify;
     }

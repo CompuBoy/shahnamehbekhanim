@@ -110,12 +110,90 @@ main {
   main h3 {
     margin: 0;
     display: none; }
-  main aside.postsBar {
-    float: right;
-    width: 30%; }
-  main .homeContent {
-    float: left;
-    width: 70%; }
+
+#home {
+  text-align: center;
+  width: 94%;
+  margin: auto; }
+  #home a.postbox {
+    background: url('/Static/assets/ShahnameBekhanim.png') 50% 50% no-repeat;
+    display: block;
+    background-size: 100%;
+    width: 100%;
+    height: 400px;
+    height: 25rem;
+    padding: 0px;
+    opacity: 1;
+    text-align: center;
+    cursor: pointer;
+    margin: 0px;
+    margin: 0rem; }
+    #home a.postbox img.play {
+      background: url('/Static/assets/play.svg') 50% 50% no-repeat;
+      background-size: 100px;
+      position: absolute;
+      top: 128px;
+      top: 8rem;
+      left: 46%;
+      width: 100px;
+      height: 100px;
+      border: none !important;
+      border-width: 0px;
+      opacity: 0.4; }
+    #home a.postbox:hover {
+      opacity: 1; }
+  #home ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    #home ul li.box {
+      margin-bottom: 16px;
+      margin-bottom: 1rem;
+      width: 48%;
+      display: inline-block; }
+      #home ul li.box a {
+        display: block;
+        padding: 11.2px 16px;
+        padding: 0.7rem 1rem;
+        border-radius: 0.4rem;
+        text-decoration: none;
+        color: rgba(0, 0, 0, .9);
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s;
+        height: 100px; }
+        #home ul li.box a i {
+          display: block;
+          font-style: normal;
+          opacity: 1;
+          text-align: right;
+          font-size: 19.2px;
+          font-size: 1.2rem; }
+        #home ul li.box a img.thumbnail {
+          width: 100px;
+          height: 100px;
+          float: right;
+          margin-left: 10px;
+          border: none !important;
+          border-width: 0px; }
+        #home ul li.box a img.aboutthumb {
+          background: url('/Static/assets/thumbnail.jpg') 50% 50% no-repeat;
+          background-size: 100px; }
+        #home ul li.box a img.newsthumb {
+          background: url('/Static/assets/thumbnail1.jpg') 50% 50% no-repeat;
+          background-size: 100px; }
+        #home ul li.box a small,
+        #home ul li.box a strong {
+          text-align: right;
+          display: block; }
+        #home ul li.box a strong {
+          font-size: 32px;
+          font-size: 2rem; }
+        #home ul li.box a small {
+          margin-top: 8px;
+          margin-top: 0.5rem; }
+        #home ul li.box a:hover {
+          -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, .2);
+                  box-shadow: 0 3px 4px rgba(0, 0, 0, .2); }
 
 #podcastposts {
   padding: 32px;
@@ -243,65 +321,11 @@ main {
       display: inline-block;
       padding: 0px;
       padding: 0rem; }
-  #news .castbox {
-    background: url('/Static/assets/castbox.png') 50% 50% no-repeat;
-    display: inline-block;
-    background-size: 7rem;
-    width: 112px;
-    width: 7rem;
-    height: 44.8px;
-    height: 2.8rem;
-    padding: 0px;
-    padding: 0rem;
-    margin-left: 16px;
-    margin-left: 1rem;
-    margin-top: 16px;
-    margin-top: 1rem;
-    opacity: 0.7;
-    border-radius: .5rem;
-    cursor: pointer; }
-    #news .castbox:hover {
-      opacity: 1; }
-  #news .podcastaddict {
-    background: url('/Static/assets/podcastaddict.png') 50% 50% no-repeat;
-    display: inline-block;
-    background-size: 7rem;
-    width: 112px;
-    width: 7rem;
-    height: 44.8px;
-    height: 2.8rem;
-    padding: 0px;
-    padding: 0rem;
-    margin-left: 16px;
-    margin-left: 1rem;
-    margin-top: 16px;
-    margin-top: 1rem;
-    opacity: 0.7;
-    border-radius: .5rem;
-    cursor: pointer; }
-    #news .podcastaddict:hover {
-      opacity: 1; }
-  #news .overcast {
-    background: url('/Static/assets/overcast.png') 50% 50% no-repeat;
-    display: inline-block;
-    background-size: 7rem;
-    width: 112px;
-    width: 7rem;
-    height: 44.8px;
-    height: 2.8rem;
-    padding: 0px;
-    padding: 0rem;
-    margin-left: 16px;
-    margin-left: 1rem;
-    margin-top: 16px;
-    margin-top: 1rem;
-    opacity: 0.7;
-    border-radius: .5rem;
-    cursor: pointer; }
-    #news .overcast:hover {
-      opacity: 1; }
+  #news .castbox,
+  #news .podcastaddict,
+  #news .podcastplayer,
+  #news .overcast,
   #news .applepodcast {
-    background: url('/Static/assets/applepodcast.png') 50% 50% no-repeat;
     display: inline-block;
     background-size: 7rem;
     width: 112px;
@@ -312,32 +336,27 @@ main {
     padding: 0rem;
     margin-left: 16px;
     margin-left: 1rem;
-    margin-top: 16px;
-    margin-top: 1rem;
+    margin-top: 32px;
+    margin-top: 2rem;
     opacity: 0.7;
     border-radius: .5rem;
     cursor: pointer; }
+    #news .castbox:hover,
+    #news .podcastaddict:hover,
+    #news .podcastplayer:hover,
+    #news .overcast:hover,
     #news .applepodcast:hover {
       opacity: 1; }
+  #news .castbox {
+    background: url('/Static/assets/castbox.png') 50% 50% no-repeat; }
+  #news .podcastaddict {
+    background: url('/Static/assets/podcastaddict.png') 50% 50% no-repeat; }
+  #news .overcast {
+    background: url('/Static/assets/overcast.png') 50% 50% no-repeat; }
+  #news .applepodcast {
+    background: url('/Static/assets/applepodcast.png') 50% 50% no-repeat; }
   #news .podcastplayer {
-    background: url('/Static/assets/castbox.png') 50% 50% no-repeat;
-    display: inline-block;
-    background-size: 7rem;
-    width: 112px;
-    width: 7rem;
-    height: 44.8px;
-    height: 2.8rem;
-    padding: 0px;
-    padding: 0rem;
-    margin-left: 16px;
-    margin-left: 1rem;
-    margin-top: 16px;
-    margin-top: 1rem;
-    opacity: 0.7;
-    border-radius: .5rem;
-    cursor: pointer; }
-    #news .podcastplayer:hover {
-      opacity: 1; }
+    background: url('/Static/assets/castbox.png') 50% 50% no-repeat; }
   #news ul {
     list-style: none;
     margin: 0;
@@ -408,8 +427,8 @@ main {
     padding-bottom: 0.4rem;
     display: block; }
   #about p {
-    font-size: 14.4px;
-    font-size: .9rem;
+    font-size: 16px;
+    font-size: 1rem;
     padding: 0px;
     padding: 0rem;
     text-align: justify; }
