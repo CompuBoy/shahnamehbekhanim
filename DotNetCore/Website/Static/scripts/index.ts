@@ -43,6 +43,10 @@ const app = new Vue({
     methods: {
         updateCategories() {
             this.showCategories = this.$route.name != 'post';
+            
+            if (this.$route.name != 'posts') {
+                this.category = this.$route.name == 'index' ?  '-':'*';
+            }
         },
     },
     created: function(){
@@ -50,6 +54,8 @@ const app = new Vue({
     },
     watch: {
         category: function(category) {
+            if (category == '*') return;
+            
             if (category == '-') {
                 router.push({ path: '/' });
                 return;
