@@ -356,18 +356,23 @@ main {
     }
     .castbox {
         background: resolve('castbox.png') 50% 50% no-repeat;
+        background-size: 7rem;
     }
     .podcastaddict {
         background: resolve('podcastaddict.png') 50% 50% no-repeat;
+        background-size: 7rem;
     }
     .overcast {
         background: resolve('overcast.png') 50% 50% no-repeat;
+        background-size: 7rem;
     }
     .applepodcast {
         background: resolve('applepodcast.png') 50% 50% no-repeat;
+        background-size: 7rem;
     }
     .podcastplayer {
         background: resolve('castbox.png') 50% 50% no-repeat;
+        background-size: 7rem;
     }
     ul {
         list-style: none;
