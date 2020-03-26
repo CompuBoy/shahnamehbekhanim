@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>شاهنامه بخوانیم</title>
     <link href="./Static/styles/_dist/main.css?v5" rel="stylesheet">
+    <link rel="stylesheet" href="./Static/lib/bootstrap.min.css" />
 </head>
 <body>
     <div id="app">
@@ -26,6 +27,14 @@
         </main>
     </div>
 
+    <script src="./Static/lib/jquery-3.4.1.slim.min.js"></script>
+    <script src="./Static/lib/popper.min.js"></script>
+    <script src="./Static/lib/bootstrap.min.js"></script>
 	<script src="./Static/scripts/_dist/main.js?v5"></script>
+    <script>
+        setTimeout(() => {
+            $('body').css('font-family', 'main');
+        });
+    </script>
 </body>
 </html>
