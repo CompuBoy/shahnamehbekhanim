@@ -161,6 +161,22 @@ namespace Shahnameh.Controllers
             });
         }
 
+        public ActionResult news() 
+        {
+            return this.DoWithDatabase(model =>
+            {
+                return Json(model.News.Select(pe => new { title = pe.Title, subtitle = pe.SubTitle, date = pe.Date, newsId = pe.NewsId }).ToList());
+            });
+        }
+
+        public ActionResult newsContent(long? newsId)
+        {           
+            return this.DoWithDatabase(model =>
+            {
+                return Json(model.News.Where(pe => pe.NewsId == newsId).Select(pe => new { title = pe.Title, subtitle = pe.SubTitle, content = pe.Content, date = pe.Date }).ToList());
+            });
+        }
+
         TResult DoWithDatabase<TResult>(Func<DataModel, TResult> function)
         {
             return function(model);

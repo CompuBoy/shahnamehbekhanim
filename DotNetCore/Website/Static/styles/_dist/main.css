@@ -4,7 +4,8 @@
   font-weight: normal;
   src: url('/Static/assets/fonts/IRANSansWeb(FaNum).ttf') format("truetype"); }
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -37,7 +38,8 @@ header {
           box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
   height: 80px;
   height: 5rem; }
-  header h1, header h2 {
+  header h1,
+  header h2 {
     margin: 0;
     display: none; }
   header #search {
@@ -109,6 +111,90 @@ main {
     margin: 0;
     display: none; }
 
+#home {
+  text-align: center;
+  width: 94%;
+  margin: auto; }
+  #home a.postbox {
+    background: url('/Static/assets/ShahnameBekhanim.png') 50% 50% no-repeat;
+    display: block;
+    background-size: 100%;
+    width: 100%;
+    height: 400px;
+    height: 25rem;
+    padding: 0px;
+    opacity: 1;
+    text-align: center;
+    cursor: pointer;
+    margin: 0px;
+    margin: 0rem; }
+    #home a.postbox img.play {
+      background: url('/Static/assets/play.svg') 50% 50% no-repeat;
+      background-size: 100px;
+      position: absolute;
+      top: 128px;
+      top: 8rem;
+      left: 46%;
+      width: 100px;
+      height: 100px;
+      border: none !important;
+      border-width: 0px;
+      opacity: 0.4; }
+    #home a.postbox:hover {
+      opacity: 1; }
+  #home ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    #home ul li.box {
+      margin-bottom: 16px;
+      margin-bottom: 1rem;
+      width: 48%;
+      display: inline-block; }
+      #home ul li.box a {
+        display: block;
+        padding: 11.2px 16px;
+        padding: 0.7rem 1rem;
+        border-radius: 0.4rem;
+        text-decoration: none;
+        color: rgba(0, 0, 0, .9);
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s;
+        height: 100px; }
+        #home ul li.box a i {
+          display: block;
+          font-style: normal;
+          opacity: 1;
+          text-align: right;
+          font-size: 19.2px;
+          font-size: 1.2rem; }
+        #home ul li.box a img.thumbnail {
+          width: 100px;
+          height: 100px;
+          float: right;
+          margin-left: 10px;
+          border: none !important;
+          border-width: 0px; }
+        #home ul li.box a img.aboutthumb {
+          background: url('/Static/assets/thumbnail.jpg') 50% 50% no-repeat;
+          background-size: 100px; }
+        #home ul li.box a img.newsthumb {
+          background: url('/Static/assets/thumbnail1.jpg') 50% 50% no-repeat;
+          background-size: 100px; }
+        #home ul li.box a small,
+        #home ul li.box a strong {
+          text-align: right;
+          display: block; }
+        #home ul li.box a strong {
+          font-size: 32px;
+          font-size: 2rem; }
+        #home ul li.box a small {
+          margin-top: 8px;
+          margin-top: 0.5rem; }
+        #home ul li.box a:hover {
+          -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, .2);
+                  box-shadow: 0 3px 4px rgba(0, 0, 0, .2); }
+
 #podcastposts {
   padding: 32px;
   padding: 2rem; }
@@ -134,7 +220,8 @@ main {
           float: left;
           font-style: normal;
           opacity: 0.7; }
-        #podcastposts ul li a small, #podcastposts ul li a strong {
+        #podcastposts ul li a small,
+        #podcastposts ul li a strong {
           display: block; }
         #podcastposts ul li a small {
           margin-top: 8px;
@@ -153,7 +240,8 @@ main {
     padding: 0; }
     #posts ul li {
       margin-bottom: 16px;
-      margin-bottom: 1rem; }
+      margin-bottom: 1rem;
+      width: 32%; }
       #posts ul li a {
         display: block;
         padding: 11.2px 16px;
@@ -168,7 +256,8 @@ main {
           float: left;
           font-style: normal;
           opacity: 0.7; }
-        #posts ul li a small, #posts ul li a strong {
+        #posts ul li a small,
+        #posts ul li a strong {
           display: block; }
         #posts ul li a small {
           margin-top: 8px;
@@ -204,6 +293,188 @@ main {
     #posts .narrator a {
       color: #fff; }
 
+#news {
+  display: block;
+  padding: 16px 24px;
+  padding: 1rem 1.5rem;
+  background: rgba(255, 255, 255, .5);
+  border-radius: 0.4rem;
+  text-decoration: none;
+  color: rgba(0, 0, 0, .9);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  margin: 32px 32px 0px;
+  margin: 2rem 2rem 0rem; }
+  #news h3 {
+    display: block;
+    margin-bottom: 6.4px;
+    margin-bottom: .4rem; }
+  #news p {
+    font-size: 14.4px;
+    font-size: .9rem;
+    margin: 0px;
+    margin: 0rem;
+    padding: 0px;
+    padding: 0rem;
+    text-align: justify; }
+    #news p a {
+      display: inline-block;
+      padding: 0px;
+      padding: 0rem; }
+  #news .castbox,
+  #news .podcastaddict,
+  #news .podcastplayer,
+  #news .overcast,
+  #news .applepodcast {
+    display: inline-block;
+    background-size: 7rem;
+    width: 112px;
+    width: 7rem;
+    height: 44.8px;
+    height: 2.8rem;
+    padding: 0px;
+    padding: 0rem;
+    margin-left: 16px;
+    margin-left: 1rem;
+    margin-top: 32px;
+    margin-top: 2rem;
+    opacity: 0.7;
+    border-radius: .5rem;
+    cursor: pointer; }
+    #news .castbox:hover,
+    #news .podcastaddict:hover,
+    #news .podcastplayer:hover,
+    #news .overcast:hover,
+    #news .applepodcast:hover {
+      opacity: 1; }
+  #news .castbox {
+    background: url('/Static/assets/castbox.png') 50% 50% no-repeat; }
+  #news .podcastaddict {
+    background: url('/Static/assets/podcastaddict.png') 50% 50% no-repeat; }
+  #news .overcast {
+    background: url('/Static/assets/overcast.png') 50% 50% no-repeat; }
+  #news .applepodcast {
+    background: url('/Static/assets/applepodcast.png') 50% 50% no-repeat; }
+  #news .podcastplayer {
+    background: url('/Static/assets/castbox.png') 50% 50% no-repeat; }
+  #news ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    #news ul li {
+      margin-bottom: 16px;
+      margin-bottom: 1rem;
+      width: 100%; }
+      #news ul li a {
+        display: block;
+        padding: 11.2px 16px;
+        padding: 0.7rem 1rem;
+        background: rgba(255, 255, 255, .5);
+        border-radius: 0.4rem;
+        text-decoration: none;
+        color: rgba(0, 0, 0, .9);
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s; }
+        #news ul li a i {
+          float: left;
+          font-style: normal;
+          opacity: 0.7; }
+        #news ul li a small,
+        #news ul li a strong {
+          display: block; }
+        #news ul li a small {
+          margin-top: 8px;
+          margin-top: 0.5rem; }
+        #news ul li a:hover {
+          -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, .2);
+                  box-shadow: 0 3px 4px rgba(0, 0, 0, .2);
+          background-color: rgba(255, 255, 255, .7); }
+    @media (min-width: 600px) {
+      #news ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        #news ul li {
+          width: 100%; } }
+
+#about {
+  display: block;
+  padding: 16px 24px;
+  padding: 1rem 1.5rem;
+  background: rgba(255, 255, 255, .5);
+  border-radius: 0.4rem;
+  text-decoration: none;
+  color: rgba(0, 0, 0, .9);
+  -webkit-transition: all 3.2px;
+  transition: all 3.2px;
+  -webkit-transition: all 0.2rem;
+  transition: all 0.2rem;
+  margin: 8px 32px 0px;
+  margin: .5rem 2rem 0rem; }
+  #about h3 {
+    padding: 0px;
+    padding: 0rem;
+    padding-bottom: 6.4px;
+    padding-bottom: 0.4rem;
+    display: block; }
+  #about p {
+    font-size: 16px;
+    font-size: 1rem;
+    padding: 0px;
+    padding: 0rem;
+    text-align: justify; }
+  #about .telegram {
+    background: url('/Static/assets/telegram.svg') 50% 50% no-repeat;
+    display: inline-block;
+    background-size: 3rem;
+    width: 56px;
+    width: 3.5rem;
+    height: 48px;
+    height: 3rem;
+    opacity: 0.7;
+    padding: 1.6px;
+    padding: .1rem;
+    cursor: pointer; }
+    #about .telegram:hover {
+      opacity: 1; }
+  #about .twitter {
+    background: url('/Static/assets/twitter.svg') 50% 50% no-repeat;
+    display: inline-block;
+    background-size: 3rem;
+    width: 48px;
+    width: 3rem;
+    height: 48px;
+    height: 3rem;
+    opacity: 0.7;
+    padding: 1.6px;
+    padding: .1rem;
+    cursor: pointer; }
+    #about .twitter:hover {
+      opacity: 1; }
+  #about .email {
+    display: inline-block;
+    background-size: 3rem;
+    width: 48px;
+    width: 3rem;
+    height: 48px;
+    height: 3rem;
+    opacity: 0.7;
+    padding: 1.6px;
+    padding: .1rem;
+    cursor: pointer;
+    background: url('/Static/assets/email.svg') 50% 50% no-repeat; }
+    #about .email:hover {
+      opacity: 1; }
+
 #post > div {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -227,7 +498,8 @@ main {
   padding: 24px;
   padding: 1.5rem;
   position: relative; }
-  #post .header h4, #post .header h5 {
+  #post .header h4,
+  #post .header h5 {
     margin: 0;
     font-weight: normal;
     padding-right: 48px;
@@ -459,9 +731,11 @@ main {
   margin-right: 16px;
   margin-right: 1rem; }
 
-.page-enter-active, .page-leave-active {
+.page-enter-active,
+.page-leave-active {
   -webkit-transition: all .5s;
   transition: all .5s; }
 
-.page-enter, .page-leave-to {
+.page-enter,
+.page-leave-to {
   opacity: 0; }

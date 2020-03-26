@@ -27,6 +27,8 @@ namespace Shahnameh.Models
 
         public DbSet<Voice> Voices { get; set; }
 
+        public DbSet<News> News { get; set; }
+
         #endregion
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
