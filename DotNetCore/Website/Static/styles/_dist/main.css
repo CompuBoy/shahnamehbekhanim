@@ -158,6 +158,8 @@ main {
       #home .box a:hover {
         padding: 16px;
         padding: 1rem; }
+      #home .box a .text-padding {
+        padding-top: 20px; }
       #home .box a i {
         display: block;
         font-style: normal;
@@ -296,8 +298,8 @@ main {
   margin: 2rem 2rem 0rem; }
   #news h3 {
     display: block;
-    margin-bottom: 6.4px;
-    margin-bottom: .4rem; }
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem; }
   #news p {
     font-size: 14.4px;
     font-size: .9rem;
@@ -419,7 +421,9 @@ main {
     padding: 0rem;
     padding-bottom: 6.4px;
     padding-bottom: 0.4rem;
-    display: block; }
+    display: block;
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem; }
   #about p {
     font-size: 16px;
     font-size: 1rem;

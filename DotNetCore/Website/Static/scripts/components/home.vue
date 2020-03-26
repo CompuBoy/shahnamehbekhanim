@@ -4,7 +4,7 @@
             <img class="play">
         </router-link>
         <div class="row">
-            <div class="col-md-6 box">
+            <div class="col-12 col-md-6 box">
                 <router-link v-bind:to="'/about'">                                        
                     <img class="thumbnail aboutthumb">
                     <div class="text-padding">
@@ -13,7 +13,7 @@
                     </div>
                 </router-link>
             </div>
-            <div class="col-md-6 box">
+            <div class="col-12 col-md-6 box">
                 <router-link v-bind:to="'/news'">
                     <img class="thumbnail newsthumb">
                     <div class="text-padding">                                       
