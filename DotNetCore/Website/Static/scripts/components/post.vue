@@ -4,7 +4,7 @@
         <div v-if="!loading">
             <div class="header">
                 <h4>{{ info.title }}</h4>
-                <h5>گوینده: <router-link v-bind:to="'/?narrator=' + info.narrator">{{ info.narrator }}</router-link></h5>
+                <h5>گوینده: <router-link v-bind:to="'/posts?narrator=' + info.narrator">{{ info.narrator }}</router-link></h5>
                 <div v-if="soundLoading" class="loading">
                     <span></span>
                 </div>

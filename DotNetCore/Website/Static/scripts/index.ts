@@ -50,13 +50,18 @@ const app = new Vue({
     },
     watch: {
         category: function(category) {
-            router.push({ path: '/', query: { category }});
+            if (category == '-') {
+                router.push({ path: '/' });
+                return;
+            }
+
+            router.push({ path: '/posts', query: { category }});
         },
         search: function (search) {
-            router.replace({ path: '/', query: { category: this.category, search }});
+            router.replace({ path: '/posts', query: { category: this.category, search }});
         },
         '$route': function(to, from) {
-            if (to.path === '/') {
+            if (to.path === '/posts') {
                 this.category = to.query.category;
             }
 

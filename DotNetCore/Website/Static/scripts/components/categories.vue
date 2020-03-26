@@ -6,7 +6,7 @@
                 v-bind:key="index"
                 v-bind:class="{ current: item === value }"
             >
-				<a v-on:click="$emit('input', item)">{{ item || 'خانه' }}</a>
+				<a v-on:click="$emit('input', item)">{{getItemTitle(item)}}</a>
 			</li>
 		</ul>
 	</div>
@@ -28,9 +28,17 @@
         methods: {
             fetch() {
                 Api.categories().then((items: any[]) => {
-                    this.items = ['', ...items] as any;
+                    this.items = ['-','', ...items] as any;
                 });
-            }
+            },
+
+            getItemTitle(item) {
+                if (item == '-') return 'خانه';
+
+                if (item == '') return "همه قسمتها";
+
+                return item;
+            },
         },
         created() {
             this.fetch();
