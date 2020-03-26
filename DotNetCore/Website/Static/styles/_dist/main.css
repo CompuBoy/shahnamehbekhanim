@@ -113,87 +113,76 @@ main {
 
 #home {
   text-align: center;
-  width: 94%;
+  width: 100%;
   margin: auto; }
   #home a.postbox {
     background: url('/Static/assets/ShahnameBekhanim.png') 50% 50% no-repeat;
     display: block;
-    background-size: 100%;
+    background-size: cover;
     width: 100%;
-    height: 400px;
-    height: 25rem;
+    height: calc(100vh - 72px);
     padding: 0px;
     opacity: 1;
     text-align: center;
     cursor: pointer;
     margin: 0px;
     margin: 0rem; }
+    #home a.postbox:hover {
+      opacity: 1; }
     #home a.postbox img.play {
       background: url('/Static/assets/play.svg') 50% 50% no-repeat;
       background-size: 100px;
       position: absolute;
-      top: 128px;
-      top: 8rem;
+      top: 50%;
       left: 46%;
       width: 100px;
-      height: 100px;
+      height: 110px;
       border: none !important;
       border-width: 0px;
       opacity: 0.4; }
-    #home a.postbox:hover {
-      opacity: 1; }
-  #home ul {
-    list-style: none;
-    margin: 0;
-    padding: 0; }
-    #home ul li.box {
-      margin-bottom: 16px;
-      margin-bottom: 1rem;
-      width: 48%;
-      display: inline-block; }
-      #home ul li.box a {
+  #home .box {
+    margin-bottom: 16px;
+    margin-bottom: 1rem;
+    width: 48%;
+    display: inline-block; }
+    #home .box a {
+      display: block;
+      padding: 11.2px 16px;
+      padding: 0.7rem 1rem;
+      border-radius: 0.4rem;
+      text-decoration: none;
+      color: rgba(0, 0, 0, .9);
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s;
+      height: 100px; }
+      #home .box a:hover {
+        padding: 16px;
+        padding: 1rem; }
+      #home .box a i {
         display: block;
-        padding: 11.2px 16px;
-        padding: 0.7rem 1rem;
-        border-radius: 0.4rem;
-        text-decoration: none;
-        color: rgba(0, 0, 0, .9);
-        -webkit-transition: all 0.2s;
-        transition: all 0.2s;
-        height: 100px; }
-        #home ul li.box a i {
-          display: block;
-          font-style: normal;
-          opacity: 1;
-          text-align: right;
-          font-size: 19.2px;
-          font-size: 1.2rem; }
-        #home ul li.box a img.thumbnail {
-          width: 100px;
-          height: 100px;
-          float: right;
-          margin-left: 10px;
-          border: none !important;
-          border-width: 0px; }
-        #home ul li.box a img.aboutthumb {
-          background: url('/Static/assets/thumbnail.jpg') 50% 50% no-repeat;
-          background-size: 100px; }
-        #home ul li.box a img.newsthumb {
-          background: url('/Static/assets/thumbnail1.jpg') 50% 50% no-repeat;
-          background-size: 100px; }
-        #home ul li.box a small,
-        #home ul li.box a strong {
-          text-align: right;
-          display: block; }
-        #home ul li.box a strong {
-          font-size: 32px;
-          font-size: 2rem; }
-        #home ul li.box a small {
-          margin-top: 8px;
-          margin-top: 0.5rem; }
-        #home ul li.box a:hover {
-          -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, .2);
-                  box-shadow: 0 3px 4px rgba(0, 0, 0, .2); }
+        font-style: normal;
+        opacity: 1;
+        text-align: right; }
+      #home .box a img.thumbnail {
+        width: 100px;
+        height: 100px;
+        float: right;
+        margin-left: 10px;
+        border: none !important;
+        border-width: 0px; }
+      #home .box a img.aboutthumb {
+        background: url('/Static/assets/thumbnail.jpg') 50% 50% no-repeat;
+        background-size: 100px; }
+      #home .box a img.newsthumb {
+        background: url('/Static/assets/thumbnail1.jpg') 50% 50% no-repeat;
+        background-size: 100px; }
+      #home .box a small,
+      #home .box a strong {
+        text-align: right;
+        display: block; }
+      #home .box a small {
+        margin-top: 8px;
+        margin-top: 0.5rem; }
 
 #podcastposts {
   padding: 32px;
@@ -348,15 +337,20 @@ main {
     #news .applepodcast:hover {
       opacity: 1; }
   #news .castbox {
-    background: url('/Static/assets/castbox.png') 50% 50% no-repeat; }
+    background: url('/Static/assets/castbox.png') 50% 50% no-repeat;
+    background-size: 7rem; }
   #news .podcastaddict {
-    background: url('/Static/assets/podcastaddict.png') 50% 50% no-repeat; }
+    background: url('/Static/assets/podcastaddict.png') 50% 50% no-repeat;
+    background-size: 7rem; }
   #news .overcast {
-    background: url('/Static/assets/overcast.png') 50% 50% no-repeat; }
+    background: url('/Static/assets/overcast.png') 50% 50% no-repeat;
+    background-size: 7rem; }
   #news .applepodcast {
-    background: url('/Static/assets/applepodcast.png') 50% 50% no-repeat; }
+    background: url('/Static/assets/applepodcast.png') 50% 50% no-repeat;
+    background-size: 7rem; }
   #news .podcastplayer {
-    background: url('/Static/assets/castbox.png') 50% 50% no-repeat; }
+    background: url('/Static/assets/castbox.png') 50% 50% no-repeat;
+    background-size: 7rem; }
   #news ul {
     list-style: none;
     margin: 0;
