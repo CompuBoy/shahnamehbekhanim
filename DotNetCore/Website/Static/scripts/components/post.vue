@@ -110,6 +110,8 @@
                         format: ['mp3'],
                         onload: () => this.soundLoading = false,
                         onplay: () => requestAnimationFrame(this.updatePos),
+                        onend: () => this.$router.push({ path: `/post/${parseInt(this.id) + 1}`, }),
+
                     });
 
                     this.play();
@@ -140,6 +142,12 @@
             },
             stop() {
                 sound.pause();
+            },
+            previous() {
+                this.$router.push({ path: `/post/${parseInt(this.id) - 1}`, });
+            },
+            next() {
+                this.$router.push({ path: `/post/${parseInt(this.id) + 1}`, });
             },
             seek(ev: MouseEvent) {
                 const pos = ev.offsetX / (ev.currentTarget as HTMLDivElement).clientWidth * sound.duration();
