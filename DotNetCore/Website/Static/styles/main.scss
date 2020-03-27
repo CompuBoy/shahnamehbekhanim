@@ -129,7 +129,6 @@ main {
 }
 
 #home {
-    text-align: center;
     width: 100%;
     margin: auto;
     a.postbox {
@@ -165,7 +164,7 @@ main {
         display: inline-block;
         a {
             display: block;
-            padding: 0.7rem 1rem;
+            padding: 1rem;
             border-radius: 0.4rem;
             text-decoration: none;
             color: rgba(0, 0, 0, 0.9);
@@ -489,7 +488,8 @@ main {
         background: rgba(0, 0, 0, 0.8);
         color: #fff;
         padding: 1.5rem;
-        position: relative;
+        position: fixed;
+        width: 100%;
         h4,
         h5 {
             margin: 0;

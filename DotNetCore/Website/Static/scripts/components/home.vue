@@ -1,8 +1,5 @@
 <template>
-    <div id="home">
-        <router-link v-bind:to="'/posts'" class="row img-responsive postbox">                                 
-            <img class="play">
-        </router-link>
+    <div id="home">       
         <div class="row">
             <div class="col-md-6 box">
                 <router-link v-bind:to="'/about'">                                        
@@ -23,13 +20,20 @@
                 </router-link>
             </div>
         </div>
+        <div class="row">
+            <posts v-model="posts"></posts>
+        </div>
     </div>
 </template>
 
 <script lang="ts">
     import Vue from 'vue';
+    import Posts from './posts.vue'
     
     export default Vue.extend({
        created() {},
+       components: {
+           'posts': Posts
+       }
     });
 </script>
