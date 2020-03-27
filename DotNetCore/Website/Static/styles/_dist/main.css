@@ -493,9 +493,7 @@ main {
   background: rgba(0, 0, 0, .8);
   color: #fff;
   padding: 24px;
-  padding: 1.5rem;
-  position: fixed;
-  width: 100%; }
+  padding: 1.5rem; }
   #post .header h4,
   #post .header h5 {
     margin: 0;
