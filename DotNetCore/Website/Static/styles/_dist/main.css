@@ -156,9 +156,7 @@ main {
       height: 100px; }
       #home .box a:hover {
         padding: 16px;
-        padding: 1rem;
-        -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, .2);
-                box-shadow: 0 3px 4px rgba(0, 0, 0, .2); }
+        padding: 1rem; }
       #home .box a .text-padding {
         padding-top: 20px; }
       #home .box a i {
@@ -496,7 +494,8 @@ main {
   color: #fff;
   padding: 24px;
   padding: 1.5rem;
-  position: relative; }
+  position: fixed;
+  width: 100%; }
   #post .header h4,
   #post .header h5 {
     margin: 0;
