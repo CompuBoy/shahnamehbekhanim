@@ -69,7 +69,7 @@
         methods: {
             update() {
                 this.loading = true;
-                Api.posts(this.category, this.narrator)
+                Api.posts(this.category == '-' || this.category == '*' ? '' : this.category, this.narrator)
                     .then((r: any) =>  {
                         this.items = r;
                         this.loading = false;

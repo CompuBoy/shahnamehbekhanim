@@ -21,7 +21,7 @@
             </div>
         </div>
         <div class="row">
-            <posts v-model="posts"></posts>
+            <posts></posts>
         </div>
     </div>
 </template>
