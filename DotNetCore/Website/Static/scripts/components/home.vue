@@ -20,9 +20,8 @@
                 </router-link>
             </div>
         </div>
-        <div class="row">
-            <posts></posts>
-        </div>
+        
+        <posts></posts>
     </div>
 </template>
 
